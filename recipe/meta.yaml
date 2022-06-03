@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/stcorp/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: 56499bb733e457c23b5e4c768d688e7502c63ec0f91dfee16ec4522781000fea
 
 build:
   noarch: python

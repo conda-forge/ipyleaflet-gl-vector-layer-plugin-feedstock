@@ -34,12 +34,12 @@ test:
   imports:
     - ipyleaflet_gl_vector_layer
   commands:
-    - test -f ${PREFIX}/share/jupyter/nbextensions/ipyleaflet_gl_vector_layer/extension.js                             # [unix]
-    - test -f ${PREFIX}/share/jupyter/nbextensions/ipyleaflet_gl_vector_layer/index.js                                 # [unix]
-    - test -f ${PREFIX}/share/jupyter/labextensions/ipyleaflet_gl_vector_layer/package.json                            # [unix]
-    - if not exist %PREFIX%\\share\\jupyter\\nbextensions\\ipyleaflet_gl_vector_layer\\extension.js (exit 1)           # [win]
-    - if not exist %PREFIX%\\share\\jupyter\\nbextensions\\ipyleaflet_gl_vector_layer\\index.js (exit 1)               # [win]
-    - if not exist %PREFIX%\\share\\jupyter\\labextensions\\ipyleaflet_gl_vector_layer\\package.json (exit 1)          # [win]
+    - test -f ${PREFIX}/share/jupyter/nbextensions/@stcorp/ipyleaflet-gl-vector-layer-plugin/extension.js                             # [unix]
+    - test -f ${PREFIX}/share/jupyter/nbextensions/@stcorp/ipyleaflet-gl-vector-layer-plugin/index.js                                 # [unix]
+    - test -f ${PREFIX}/share/jupyter/labextensions/@stcorp/ipyleaflet-gl-vector-layer-plugin/package.json                            # [unix]
+    - if not exist %PREFIX%\\share\\jupyter\\nbextensions\\@stcorp/ipyleaflet-gl-vector-layer-plugin\\extension.js (exit 1)           # [win]
+    - if not exist %PREFIX%\\share\\jupyter\\nbextensions\\@stcorp/ipyleaflet-gl-vector-layer-plugin\\index.js (exit 1)               # [win]
+    - if not exist %PREFIX%\\share\\jupyter\\labextensions\\@stcorp/ipyleaflet-gl-vector-layer-plugin\\package.json (exit 1)          # [win]
 
 about:
   home: https://github.com/stcorp/ipyleaflet-gl-vector-layer-plugin

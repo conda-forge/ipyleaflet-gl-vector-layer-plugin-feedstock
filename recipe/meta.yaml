@@ -1,5 +1,5 @@
 {% set name = "ipyleaflet-gl-vector-layer-plugin" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,7 @@ package:
 
 source:
   url: https://github.com/stcorp/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: aef864257e5dc60f92d50cfc181fe208e290e4cf3e2bc8ac3b857faffc6a5408
-  patches:
-    - fixversion.patch
+  sha256: 7b941d103610272a1b516d7569f675a1aecad44b1d8586febb0f872cd542c6eb
 
 build:
   noarch: python
@@ -27,7 +25,7 @@ requirements:
   run:
     - python >=3.6
     - ipywidgets >=7.6.0
-    - ipyleaflet >=0.13.5
+    - ipyleaflet >=0.13.5,<0.17
     - traittypes
     - traitlets
     - numpy

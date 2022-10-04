@@ -1,5 +1,5 @@
 {% set name = "ipyleaflet-gl-vector-layer-plugin" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/stcorp/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 7b941d103610272a1b516d7569f675a1aecad44b1d8586febb0f872cd542c6eb
+  sha256: 409747c949b4410da41a57a2aa66b9e94155d1eae498bb16d8c94a172f1be9e2
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:

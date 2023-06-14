@@ -1,11 +1,11 @@
-About ipyleaflet-gl-vector-layer-plugin
-=======================================
+About ipyleaflet-gl-vector-layer-plugin-feedstock
+=================================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipyleaflet-gl-vector-layer-plugin-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/stcorp/ipyleaflet-gl-vector-layer-plugin
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipyleaflet-gl-vector-layer-plugin-feedstock/blob/main/LICENSE.txt)
 
 Summary: A plugin for visualizing large amounts of data on a GL-overlay on top of Leaflet
 

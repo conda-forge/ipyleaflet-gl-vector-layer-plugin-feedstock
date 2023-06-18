@@ -1,5 +1,5 @@
 {% set name = "ipyleaflet-gl-vector-layer-plugin" %}
-{% set version = "0.1.13" %}
+{% set version = "0.1.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/stcorp/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 3b13d2a0a25862639decf39adb34bc5082bee0cfa214b25f4cb4f27b09b23744
+  sha256: c9d15cd7540fbbdf17286498cf211f1f50c97ce6f9ec6654801137a2402abad1
 
 build:
   noarch: python
@@ -20,8 +20,8 @@ requirements:
     - pip
     - setuptools >=40.8.0
     - jupyter-packaging ~=0.7.9
-    - jupyterlab >=3.0.0
-    - yarn
+    - jupyterlab >=3.0.0,<4
+    - yarn <2
   run:
     - python >=3.6
     - ipywidgets >=7.6.0

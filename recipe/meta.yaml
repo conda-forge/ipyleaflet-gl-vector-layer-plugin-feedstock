@@ -21,7 +21,7 @@ requirements:
     - setuptools >=40.8.0
     - jupyter-packaging ~=0.7.9
     - jupyterlab >=3.0.0
-    - yarn
+    - yarn <2
   run:
     - python >=3.6
     - ipywidgets >=7.6.0

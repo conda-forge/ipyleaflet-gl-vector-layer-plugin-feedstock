@@ -11,19 +11,19 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools >=40.8.0
     - jupyter-packaging ~=0.7.9
     - jupyterlab >=3.0.0,<4
     - yarn <2
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - ipywidgets >=7.6.0
     - ipyleaflet >=0.13.5
     - traittypes
@@ -31,6 +31,8 @@ requirements:
     - numpy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ipyleaflet_gl_vector_layer
   commands:
